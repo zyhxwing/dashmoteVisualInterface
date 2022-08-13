@@ -20,7 +20,7 @@
         :data-source="tbMainData"
       >
         <a-list-item slot="renderItem" slot-scope="item, index" @click="openDetail(item)">
-          <a slot="actions" class="deleteButton" @click="deleteItem(item,index)">Delete</a>
+          <a slot="actions" class="deleteButton" @click="deleteItem(item,index)"  onClick="event.cancelBubble = true">Delete</a>
           <div class="colorBlock" :style="{background:colorList[index%3]}"></div>
           <div class="avatarAndContent">
             <a-avatar :style="{background:avatarColorList[index%3],color:colorList[index%3]}"
