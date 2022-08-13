@@ -9,10 +9,9 @@ import Global from '@/common/global.js' //全局封装方法
 // }
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   base: '/Web/',
   routes: [
-
     {
       path: '/',
       name: 'Home',
